@@ -4,8 +4,6 @@ import { Link } from 'react-router';
 import { preventDefault } from '../utils';
 import { Throbber } from './throbber';
 
-import GroupFeedTypePicker from './group-feed-type-picker';
-
 export default class GroupCreateForm extends React.Component {
   constructor(props) {
     super(props);
@@ -24,10 +22,6 @@ export default class GroupCreateForm extends React.Component {
     const newState = {};
     newState[property] = event.target.value;
     this.setState(newState);
-  };
-
-  handlePrivacyTypeChange = (privacySettings) => {
-    this.setState(privacySettings);
   };
 
   saveSettings = () => {
@@ -78,12 +72,7 @@ export default class GroupCreateForm extends React.Component {
                 maxLength="1500"
               />
             </div>
-            <GroupFeedTypePicker
-              isPrivate={this.state.isPrivate}
-              isProtected={this.state.isProtected}
-              isRestricted={this.state.isRestricted}
-              updateGroupPrivacySettings={this.handlePrivacyTypeChange}
-            />
+
             <p>
               <button className="btn btn-default" type="submit">
                 Create

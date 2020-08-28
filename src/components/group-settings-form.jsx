@@ -1,4 +1,3 @@
-/* global CONFIG */
 import React, { useMemo } from 'react';
 import { useField, useForm } from 'react-final-form-hooks';
 import { useSelector, useDispatch } from 'react-redux';
@@ -9,13 +8,9 @@ import { initialAsyncState } from '../redux/async-helpers';
 import { PreventPageLeaving } from './prevent-page-leaving';
 import { Throbber } from './throbber';
 import { privacyFlagsToString, privacyStringToFlags } from './settings/forms/privacy';
-import { shouldBe, errorMessage, groupErrClass, RadioInput } from './form-utils';
+import { shouldBe, errorMessage, groupErrClass } from './form-utils';
 import styles from './settings/forms/forms.module.scss';
 import settingsStyles from './settings/settings.module.scss';
-
-const PUBLIC = 'public',
-  PROTECTED = 'protected',
-  PRIVATE = 'private';
 
 export default function GroupSettingsForm({ username }) {
   const dispatch = useDispatch();
@@ -37,13 +32,6 @@ export default function GroupSettingsForm({ username }) {
 
   const screenName = useField('screenName', form.form);
   const description = useField('description', form.form);
-  const privacy = useField('privacy', form.form);
-  const restrictness = useField('restrictness', form.form);
-
-  const showPrivacyWarning = useMemo(
-    () => privacy.input.value !== PRIVATE && group.isPrivate === '1',
-    [group.isPrivate, privacy.input.value],
-  );
 
   return (
     <form onSubmit={form.handleSubmit}>
@@ -69,59 +57,6 @@ export default function GroupSettingsForm({ username }) {
             className={`form-control wider-input ${styles.profileDescription}`}
             {...description.input}
           />
-        </div>
-      </section>
-
-      <section className={settingsStyles.formSection}>
-        <div className="form-group">
-          <p>
-            <strong>Who can view posts?</strong>
-          </p>
-          <div className="radio">
-            <label>
-              <RadioInput field={privacy} value={PUBLIC} />
-              Everyone (public group)
-            </label>
-          </div>
-          <div className="radio">
-            <label>
-              <RadioInput field={privacy} value={PROTECTED} />
-              {CONFIG.siteTitle} users only (protected group)
-            </label>
-          </div>
-          <div className="radio">
-            <label>
-              <RadioInput field={privacy} value={PRIVATE} />
-              Group members only (private group)
-            </label>
-          </div>
-          {showPrivacyWarning && (
-            <div className="alert alert-warning" role="alert">
-              You are about to change the group type from private to{' '}
-              {privacy.input.value === PROTECTED ? 'protected' : 'public'}. It means{' '}
-              {privacy.input.value === PROTECTED ? `any ${CONFIG.siteTitle} user` : 'anyone'} will
-              be able to will be able to read its posts and comments, which are only available to
-              group members now.
-            </div>
-          )}
-        </div>
-
-        <div className="form-group">
-          <p>
-            <strong>Who can write posts?</strong>
-          </p>
-          <div className="radio">
-            <label>
-              <RadioInput field={restrictness} value="0" />
-              Every group member
-            </label>
-          </div>
-          <div className="radio">
-            <label>
-              <RadioInput field={restrictness} value="1" />
-              Group administrators only
-            </label>
-          </div>
         </div>
       </section>
 

@@ -615,7 +615,12 @@ export function getUserInfo(username) {
 export function createGroup(groupSettings) {
   return {
     type: ActionTypes.CREATE_GROUP,
-    payload: groupSettings,
+    payload: {
+      ...groupSettings,
+      isPrivate: '0',
+      isProtected: '1',
+      isRestricted: '0',
+    },
     apiRequest: Api.createGroup,
   };
 }
