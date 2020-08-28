@@ -8,7 +8,6 @@ import {
   faKey,
   faShieldAlt,
   faDesktop,
-  faPuzzlePiece,
   faEnvelope,
   faUser,
 } from '@fortawesome/free-solid-svg-icons';
@@ -29,7 +28,6 @@ const tabs = [
   { id: 'privacy', icon: faShieldAlt, title: 'Privacy' },
   { id: 'appearance', icon: faDesktop, title: 'Appearance' },
   { id: 'notifications', icon: faEnvelope, title: 'Notifications' },
-  { id: 'app-tokens', icon: faPuzzlePiece, title: 'App tokens' },
 ];
 
 const loadingPage = (
