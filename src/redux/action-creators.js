@@ -431,7 +431,10 @@ export function signUp(signUpData) {
     type: ActionTypes.SIGN_UP,
     apiRequest: Api.signUp,
     nonAuthRequest: true,
-    payload: { ...signUpData },
+    payload: {
+      ...signUpData,
+      isProtected: true, // Circle users should be created as "protected"
+    },
   };
 }
 
