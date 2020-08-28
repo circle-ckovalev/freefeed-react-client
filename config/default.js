@@ -4,10 +4,10 @@ import { TLDs } from './lib/tlds';
 
 export default {
   api: {
-    root: 'https://candy.freefeed.net',
+    root: 'https://circle.ckovalev.com',
   },
 
-  siteTitle: 'FreeFeed',
+  siteTitle: 'Circle',
 
   siteOrigin: 'http://localhost:3333',
 
@@ -31,8 +31,7 @@ export default {
 
   siteDomains: [
     // for transform links in the posts, comments, etc.
-    'freefeed.net',
-    'gamma.freefeed.net',
+    'circle.ckovalev.com',
   ],
 
   attachments: { maxCount: 20 },
@@ -44,7 +43,7 @@ export default {
   },
 
   frontendPreferences: {
-    clientId: 'net.freefeed',
+    clientId: 'com.ckovalev.circle',
     // Use only plain JSON types here. Do not use null values (for type checking).
     defaultValues: {
       displayNames: {
