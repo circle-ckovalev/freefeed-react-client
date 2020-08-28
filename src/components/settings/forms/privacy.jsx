@@ -28,34 +28,11 @@ export default (function PrivacyForm() {
     ),
   );
 
-  const privacy = useField('privacy', form.form);
   const acceptDirectsFrom = useField('acceptDirectsFrom', form.form);
 
   return (
     <form onSubmit={form.handleSubmit}>
       <PreventPageLeaving prevent={form.dirty} />
-
-      <div className="form-group">
-        <p>Your feed is:</p>
-        <div className="radio">
-          <label>
-            <RadioInput field={privacy} value={PUBLIC} />
-            Public &mdash; anyone can see your posts
-          </label>
-        </div>
-        <div className="radio">
-          <label>
-            <RadioInput field={privacy} value={PROTECTED} />
-            Protected &mdash; anonymous users and search engines cannot see your posts
-          </label>
-        </div>
-        <div className="radio">
-          <label>
-            <RadioInput field={privacy} value={PRIVATE} />
-            Private &mdash; only people you approve can see your posts
-          </label>
-        </div>
-      </div>
 
       <div className="form-group">
         <p>Accept direct messages from:</p>
@@ -106,9 +83,8 @@ function initialValues(userData) {
 
 function onSubmit(id, dispatch) {
   return (values) => {
-    const { isPrivate, isProtected } = privacyStringToFlags(values.privacy);
     dispatch(
-      updateUser(id, undefined, undefined, isPrivate, isProtected, undefined, undefined, {
+      updateUser(id, undefined, undefined, '0', '1', undefined, undefined, {
         acceptDirectsFrom: values.acceptDirectsFrom,
       }),
     );
