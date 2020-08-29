@@ -15,8 +15,6 @@ import { CookiesBanner } from './cookies-banner';
 import { ExtAuthButtons } from './ext-auth-buttons';
 
 export default React.memo(function SignInPage() {
-  const [providers] = useExtAuthProviders();
-
   return (
     <div className="box">
       <div className="box-header-timeline">Welcome to {CONFIG.siteTitle}!</div>
@@ -29,26 +27,6 @@ export default React.memo(function SignInPage() {
             <ResumeForm />
             <ExtAuthSignIn />
           </ErrorBoundary>
-          <h3>New to {CONFIG.siteTitle}?</h3>
-          {providers.length > 0 ? (
-            <>
-              <p>
-                <Link to="/signup" style={{ textDecoration: 'underline' }}>
-                  Fill a sign up form
-                </Link>{' '}
-                to create an account manually or just click on one of the social network buttons
-                above.
-              </p>
-              <p>We will create an account for you based on the data from the social network.</p>
-            </>
-          ) : (
-            <p>
-              <Link to="/signup" style={{ textDecoration: 'underline' }}>
-                Fill a sign up form
-              </Link>{' '}
-              to create an account.
-            </p>
-          )}
         </div>
       </div>
       <div className="box-footer" />

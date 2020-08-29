@@ -1,6 +1,4 @@
-/* global CONFIG */
 import React from 'react';
-import { Link } from 'react-router';
 import { connect } from 'react-redux';
 import { resetPassword, resetPasswordValidationFail } from '../redux/action-creators';
 import { preventDefault } from '../utils';
@@ -104,9 +102,6 @@ class ResetPassword extends React.Component {
                     </div>
                   </form>
                 </LoaderContainer>
-                <p>
-                  New to {CONFIG.siteTitle}? <Link to="/signup">Create an account »</Link>
-                </p>
               </div>
             </div>
           </div>

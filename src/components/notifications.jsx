@@ -289,8 +289,7 @@ const Notifications = (props) => (
         </PaginatedView>
       ) : (
         <div className="alert alert-danger" role="alert">
-          You must <Link to="/signin">sign in</Link> or <Link to="/signup">sign up</Link> before
-          visiting this page.
+          You must <Link to="/signin">sign in</Link> before visiting this page.
         </div>
       )}
     </ErrorBoundary>

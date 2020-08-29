@@ -17,10 +17,7 @@ const About = ({ authenticated }) => (
 
       {!authenticated ? (
         <p>
-          <b>
-            <Link to="/signup">Sign up</Link>
-          </b>{' '}
-          now or <Link to="/signin">sign in</Link> if you already have an account.
+          <Link to="/signin">Sign in</Link> if you already have an account.
         </p>
       ) : (
         false
@@ -93,18 +90,6 @@ const About = ({ authenticated }) => (
       </p>
 
       <p>FreeFeed v.1 was released in August 2016.</p>
-
-      {!authenticated ? (
-        <p>
-          You can{' '}
-          <b>
-            <Link to="/signup">sign up</Link>
-          </b>{' '}
-          now and join FreeFeed.
-        </p>
-      ) : (
-        false
-      )}
     </div>
   </div>
 );

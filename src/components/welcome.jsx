@@ -44,14 +44,8 @@ export default () => (
     </p>
 
     <p>
-      <b>
-        <Link to="/signup" className="inline-header">
-          Sign up
-        </Link>
-      </b>{' '}
-      now or{' '}
       <Link to="/signin" className="inline-header">
-        sign in
+        Sign in
       </Link>{' '}
       if you already have an account.
     </p>
@@ -98,12 +92,6 @@ export default () => (
     </p>
 
     <p>
-      <b>
-        <Link to="/signup" className="inline-header">
-          Зарегистрироваться
-        </Link>
-      </b>{' '}
-      или
       <Link to="/signin" className="inline-header">
         Войти
       </Link>{' '}
