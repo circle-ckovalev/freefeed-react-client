@@ -197,15 +197,7 @@ const ExtAuthSignIn = React.memo(function ExtAuthSignIn() {
             <strong>
               {providerTitle(result.profile.provider, { withText: false })} {result.profile.name}
             </strong>{' '}
-            account is not connected to any {CONFIG.siteTitle} account. Do you want to create a new
-            {CONFIG.siteTitle} account based on its data? After creation you will be able to sign in
-            using this {providerTitle(result.profile.provider, { withText: true, withIcon: false })}{' '}
-            account.
-          </p>
-          <p>
-            <Link to="/signup" className="btn btn-success">
-              Continue to create an account&hellip;
-            </Link>
+            account is not connected to any {CONFIG.siteTitle} account.
           </p>
         </div>
       )}
