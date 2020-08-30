@@ -15,8 +15,6 @@ export default () => (
     {' | '}
     <Link to="/about/privacy">Privacy</Link>
     {' | '}
-    <Link to="/about/stats">Stats</Link>
-    {' | '}
     <a href="https://github.com/FreeFeed" target="_blank">
       GitHub
     </a>
