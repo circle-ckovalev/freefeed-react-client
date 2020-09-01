@@ -15,7 +15,7 @@ export default () => (
     {' | '}
     <Link to="/about/privacy">Privacy</Link>
     {' | '}
-    Powered by
+    Powered by{' '}
     <a href="https://freefeed.net/" target="_blank">
       FreeFeed.net
     </a>
