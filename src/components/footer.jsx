@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 export default () => (
   <footer className="footer">
-    &copy; FreeFeed 1.84.1 (Aug, 18, 2020)
+    &copy; Circle, a community for Andrei Kovalev&apos;s course alumni
     <br />
     <Link to="/about">About</Link>
     {' | '}
@@ -15,8 +15,9 @@ export default () => (
     {' | '}
     <Link to="/about/privacy">Privacy</Link>
     {' | '}
-    <a href="https://github.com/FreeFeed" target="_blank">
-      GitHub
+    Powered by
+    <a href="https://freefeed.net/" target="_blank">
+      FreeFeed.net
     </a>
   </footer>
 );
