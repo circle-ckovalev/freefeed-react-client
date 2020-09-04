@@ -170,6 +170,11 @@ function App() {
           />
         </Route>
         <Route
+          path="faq"
+          component={lazyLoad('./components/faq')}
+          onEnter={enterStaticPage('FAQ')}
+        />
+        <Route
           path="dev"
           component={lazyLoad('./components/dev')}
           onEnter={enterStaticPage('Developers')}

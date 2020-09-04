@@ -7,9 +7,7 @@ export default () => (
     <br />
     <Link to="/about">About</Link>
     {' | '}
-    <a href="https://github.com/FreeFeed/freefeed-server/wiki/FAQ" target="_blank">
-      FAQ
-    </a>
+    <Link to="/faq">FAQ</Link>
     {' | '}
     <Link to="/about/terms">Terms</Link>
     {' | '}

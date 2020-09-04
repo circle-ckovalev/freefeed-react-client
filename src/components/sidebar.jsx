@@ -131,7 +131,7 @@ const SideBarFreeFeed = () => (
           <Link to="/all-groups">All groups</Link>
         </li>
         <li>
-          <Link to="/support">Support</Link> / <Link to="/welcome">FAQ</Link>
+          <Link to="/support">Support</Link> / <Link to="/faq">FAQ</Link>
         </li>
         <li>
           <Link to="/circle-news">News</Link>
