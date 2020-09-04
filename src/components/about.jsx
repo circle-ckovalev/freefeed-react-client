@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 
-const About = ({ authenticated }) => (
+const About = () => (
   <div className="box">
     <div className="box-header-timeline" />
     <div className="box-body">
@@ -14,14 +14,6 @@ const About = ({ authenticated }) => (
         media conventions we are all used to: each member has a profile, can interact with posts
         from other users, and can subscribe to various groups per their interests.
       </p>
-
-      {!authenticated ? (
-        <p>
-          <Link to="/signin">Sign in</Link> if you already have an account.
-        </p>
-      ) : (
-        false
-      )}
 
       <p>
         You are automatically subscribed to <Link to="/ckovalev">Andrei&apos;s</Link> feed and the{' '}
@@ -96,6 +88,7 @@ const About = ({ authenticated }) => (
       <p>Cinematographer</p>
 
       <p>
+        <br />
         Circle is powered by{' '}
         <a href="https://freefeed.net/" target="_blank">
           FreeFeed.net
