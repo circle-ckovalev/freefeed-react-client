@@ -32,13 +32,13 @@ const About = ({ authenticated }) => (
       <p>We recommend you also subscribe to these groups to get you started:</p>
 
       <h3>
-        <Link to="/group1">Feedback & critique</Link>
+        <Link to="/feedback">Feedback & critique</Link>
       </h3>
 
       <p>Share your work, give feedback, grow.</p>
 
       <h3>
-        <Link to="/group2">How is it done?</Link>
+        <Link to="/how">How is it done?</Link>
       </h3>
 
       <p>
@@ -46,19 +46,19 @@ const About = ({ authenticated }) => (
       </p>
 
       <h3>
-        <Link to="/group1">Tools & toys</Link>
+        <Link to="/toolstoys">Tools & toys</Link>
       </h3>
 
       <p>Equipment and DIY solutions. Find the right tool for the job.</p>
 
       <h3>
-        <Link to="/group1">Inspiration & ideas</Link>
+        <Link to="/inspiration">Inspiration & ideas</Link>
       </h3>
 
       <p>Found something cool? Share it!</p>
 
       <h3>
-        <Link to="/group1">Behind the curtain</Link>
+        <Link to="/bts">Behind the curtain</Link>
       </h3>
 
       <p>Method, process, and works in progress. Show us your set-ups!</p>
@@ -94,10 +94,6 @@ const About = ({ authenticated }) => (
         <b>Dmytro Rusanov</b>
       </p>
       <p>Cinematographer</p>
-
-      <h3>FAQ</h3>
-
-      <p>WIP</p>
 
       <p>
         Circle is powered by{' '}
