@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { connect } from 'react-redux';
 
 const About = () => (
   <div className="box">
@@ -16,9 +15,9 @@ const About = () => (
       </p>
 
       <p>
-        You are automatically subscribed to <Link to="/ckovalev">Andrei&apos;s</Link> feed and the{' '}
-        <Link to="/circle">official Circle</Link> account. Don&apos;t forget that you can subscribe
-        to another member&apos;s feeds to follow their posts!
+        You are automatically subscribed to the <Link to="/circle">official Circle</Link> account.
+        Don&apos;t forget that you can subscribe to another member&apos;s feeds to follow their
+        posts!
       </p>
 
       <p>We recommend you also subscribe to these groups to get you started:</p>
@@ -98,8 +97,4 @@ const About = () => (
   </div>
 );
 
-function mapStateToProps(state) {
-  return { authenticated: state.authenticated };
-}
-
-export default connect(mapStateToProps)(About);
+export default About;
