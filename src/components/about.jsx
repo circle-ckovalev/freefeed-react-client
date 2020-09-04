@@ -2,17 +2,17 @@ import React from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
 
-import screenshot from '../../assets/images/screenshot.png';
-
 const About = ({ authenticated }) => (
   <div className="box">
     <div className="box-header-timeline" />
     <div className="box-body">
-      <h3>What is FreeFeed?</h3>
+      <h3>About</h3>
 
       <p>
-        FreeFeed is a social network that enables you to discover and discuss the interesting stuff
-        your friends find on the web.
+        The Circle is a private social network for alumni of Andrei Kovalev&apos;s courses who share
+        an active commitment to photography and the visual arts. It follows many of the same social
+        media conventions we are all used to: each member has a profile, can interact with posts
+        from other users, and can subscribe to various groups per their interests.
       </p>
 
       {!authenticated ? (
@@ -24,72 +24,87 @@ const About = ({ authenticated }) => (
       )}
 
       <p>
-        <img src={screenshot} width="450" height="431" style={{ border: '1px solid #ccc' }} />
+        You are automatically subscribed to <Link to="/ckovalev">Andrei&apos;s</Link> feed and the{' '}
+        <Link to="/circle">official Circle</Link> account. Don&apos;t forget that you can subscribe
+        to another member&apos;s feeds to follow their posts!
       </p>
 
-      <h3>Why FreeFeed?</h3>
+      <p>We recommend you also subscribe to these groups to get you started:</p>
+
+      <h3>
+        <Link to="/group1">Feedback & critique</Link>
+      </h3>
+
+      <p>Share your work, give feedback, grow.</p>
+
+      <h3>
+        <Link to="/group2">How is it done?</Link>
+      </h3>
 
       <p>
-        FreeFeed is being built as a replacement for{' '}
-        <a href="https://en.wikipedia.org/wiki/FriendFeed" target="_blank">
-          FriendFeed
-        </a>
-        , the real-time aggregator and social network where {'"'}likes{'"'} for user generated
-        content were implemented for the first time.
+        Image analysis. {'"'}How can I achieve this effect?{'"'}
       </p>
 
+      <h3>
+        <Link to="/group1">Tools & toys</Link>
+      </h3>
+
+      <p>Equipment and DIY solutions. Find the right tool for the job.</p>
+
+      <h3>
+        <Link to="/group1">Inspiration & ideas</Link>
+      </h3>
+
+      <p>Found something cool? Share it!</p>
+
+      <h3>
+        <Link to="/group1">Behind the curtain</Link>
+      </h3>
+
+      <p>Method, process, and works in progress. Show us your set-ups!</p>
+
       <p>
-        After Facebook had acquired FriendFeed and announced its plan to shut down the website on
-        April 9, 2015, a small group of Russian-speaking FriendFeed users decided to build an
-        open-source free-for-all replacement.
+        See something that’s not working or a way we can improve? Let us know in the{' '}
+        <Link to="/support">support group</Link>.
       </p>
+
+      <h3>The Circle team</h3>
+
+      <p>
+        <b>Andrei Kovalev</b>
+      </p>
+      <p>Visual artist, educator</p>
+
+      <p>
+        <b>Thomas Burns</b>
+      </p>
+      <p>Creative director, educator</p>
+
+      <p>
+        <b>Olesya Popova</b>
+      </p>
+      <p>Business director</p>
+
+      <p>
+        <b>Elina Wexler</b>
+      </p>
+      <p>Community manager</p>
+
+      <p>
+        <b>Dmytro Rusanov</b>
+      </p>
+      <p>Cinematographer</p>
 
       <h3>FAQ</h3>
 
+      <p>WIP</p>
+
       <p>
-        FreeFeed{' '}
-        <a href="https://github.com/FreeFeed/freefeed-server/wiki/FAQ" target="_blank">
-          frequently asked questions page
+        Circle is powered by{' '}
+        <a href="https://freefeed.net/" target="_blank">
+          FreeFeed.net
         </a>
-        .
       </p>
-
-      <h3>Help us build better FreeFeed</h3>
-
-      <p>
-        FreeFeed is an open-source project. We are <Link to="/dev">looking for volunteers</Link> to
-        help us with the development of FreeFeed.net.
-      </p>
-
-      <h3>Important pages</h3>
-
-      <p>
-        <Link to="/support">https://freefeed.net/support</Link> – Tech support (we speak English,
-        Russian as well as some other languages :))
-      </p>
-
-      <p>
-        <Link to="/freefeed">https://freefeed.net/freefeed</Link> – Important service announcements
-      </p>
-
-      <h3>The team behind FreeFeed</h3>
-
-      <p>
-        A team of volunteers registered a non-profit organization, FreeFeed.net MTÜ, in Tallinn,
-        Estonia to fund and coordinate open-source development of the platform.
-      </p>
-
-      <p>
-        After launching a{' '}
-        <a href="https://www.indiegogo.com/projects/freefeed-v-1" target="_blank">
-          successful crowdfunding campaign
-        </a>{' '}
-        in December 2015, the platform is now being actively developed. It is being used by{' '}
-        <Link to="/about/stats">hundreds of people</Link> now, even though the work is still
-        underway.
-      </p>
-
-      <p>FreeFeed v.1 was released in August 2016.</p>
     </div>
   </div>
 );
