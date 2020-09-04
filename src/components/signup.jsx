@@ -22,9 +22,9 @@ export default React.memo(function Signup() {
       <div className="box-body">
         <div className="col-md-12">
           <p>
-            The Circle is a private social network for alumni of Andrei Kovalev’s courses. If you have
-            taken or participated in any of Andrei’s courses, online or offline, and you would like to
-            set up a Circle account, please contact us at{' '}
+            The Circle is a private social network for alumni of Andrei Kovalev’s courses. If you
+            have taken or participated in any of Andrei’s courses, online or offline, and you would
+            like to set up a Circle account, please contact us at{' '}
             <a href="mailto:circle@ckovalev.com">circle@ckovalev.com</a>.
           </p>
 
