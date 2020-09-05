@@ -1,150 +1,20 @@
-/* global CONFIG */
-import { encode as qsEncode } from 'querystring';
-import React, { useCallback, useMemo } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
 import { Link } from 'react-router';
 
-import { signedIn } from '../redux/action-creators';
-import SignupForm from './signup-form';
-import { CookiesBanner } from './cookies-banner';
-import { useExtAuthProviders, providerTitle } from './ext-auth-helpers';
-import { ExtAuthButtons, SIGN_UP } from './ext-auth-buttons';
-import { useServerInfo } from './hooks/server-info';
+export default () => (
+  <div className="box-body">
+    <p>
+      The Circle is a private social network for alumni of Andrei Kovalev’s courses. If you have
+      taken or participated in any of Andrei’s courses, online or offline, and you would like to set
+      up a Circle account, please contact us at{' '}
+      <a href="mailto:circle@ckovalev.com">circle@ckovalev.com</a>.
+    </p>
 
-export default React.memo(function Signup() {
-  const [serverInfo, serverInfoStatus] = useServerInfo();
-  const registrationOpen = !serverInfoStatus.success || serverInfo.registrationOpen;
-  const withForm = !!CONFIG.registrationsLimit.emailFormIframeSrc;
-
-  return (
-    <div className="box">
-      <div className="box-header-timeline">Hello</div>
-      <div className="box-body">
-        <div className="col-md-12">
-          <p>
-            The Circle is a private social network for alumni of Andrei Kovalev’s courses. If you
-            have taken or participated in any of Andrei’s courses, online or offline, and you would
-            like to set up a Circle account, please contact us at{' '}
-            <a href="mailto:circle@ckovalev.com">circle@ckovalev.com</a>.
-          </p>
-
-          <p>
-            Already registered? —{' '}
-            <Link to="/signin">
-              <b>Sign in!</b>
-            </Link>
-          </p>
-          <hr />
-          <h3>
-            The text below will go away <b>soon</b>
-          </h3>
-          <hr />
-
-          <h2 className="p-signin-header">Sign up</h2>
-          {registrationOpen ? (
-            <>
-              <CookiesBanner />
-              <SignupForm />
-              <ExtAuthSignup />
-            </>
-          ) : (
-            <>
-              <div className="alert alert-warning" role="alert">
-                <p>
-                  Unfortunately we are not accepting new user registrations at this time, but we
-                  plan to be open for registration shortly.
-                </p>
-                {withForm && (
-                  <p>
-                    Please provide your email address to be notified when {CONFIG.siteTitle} is open
-                    for registration.
-                  </p>
-                )}
-              </div>
-              {withForm && (
-                <p>
-                  <iframe
-                    src={CONFIG.registrationsLimit.emailFormIframeSrc}
-                    width="100%"
-                    height="550"
-                    frameBorder="0"
-                    marginHeight="0"
-                    marginWidth="0"
-                  >
-                    Loading…
-                  </iframe>
-                </p>
-              )}
-            </>
-          )}
-        </div>
-      </div>
-      <div className="box-footer" />
-    </div>
-  );
-});
-
-const ExtAuthSignup = React.memo(function ExtAuthSignup() {
-  const dispatch = useDispatch();
-  const [providers] = useExtAuthProviders();
-  const result = useSelector((state) => state.extAuth.signInResult);
-
-  // No deps: we are specifically intresting in the initial value of result.
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const comeWithResult = useMemo(() => !!result.status, []);
-
-  const doSignIn = useCallback(() => dispatch(signedIn(result.authToken)), [
-    dispatch,
-    result.authToken,
-  ]);
-
-  // Do not show anything if we open this page with auth result
-  // or there are no allowed providers
-  if (comeWithResult || providers.length === 0) {
-    return null;
-  }
-
-  return (
-    <>
-      <p>Or use external service profile to create {CONFIG.siteTitle} account:</p>
-      <ExtAuthButtons mode={SIGN_UP} />
-      {result.status === 'signed-in' && (
-        <div className="alert alert-success" role="alert">
-          <p>
-            This {providerTitle(result.profile.provider)} account is already connected to{' '}
-            <strong>@{result.user.username}</strong> {CONFIG.siteTitle} account. Is it you?
-          </p>
-          <p>
-            <button className="btn btn-success" onClick={doSignIn}>
-              Sign in and continue as <strong>@{result.user.username}</strong>
-            </button>
-          </p>
-        </div>
-      )}
-      {result.status === 'continue' && (
-        <div className="alert alert-success" role="alert">
-          <p>Excellent! Now you can edit the form above and create a new account.</p>
-        </div>
-      )}
-      {result.status === 'user-exists' && (
-        <div className="alert alert-warning" role="alert">
-          <p>
-            There is already a {CONFIG.siteTitle} account with the address{' '}
-            <strong>{result.profile.email}</strong>.
-          </p>
-          <p>
-            If this is you, you should <Link to="/signin">sign in</Link> with your username/email
-            and password or in any other way allowed for your account.
-          </p>
-          <p>
-            If you have forgotten your password, you can{' '}
-            <Link to={`/restore?${qsEncode({ email: result.profile.email })}`}>
-              reset it and set the new one
-            </Link>
-            .
-          </p>
-        </div>
-      )}
-    </>
-  );
-});
+    <p>
+      Already registered? —{' '}
+      <Link to="/signin">
+        <b>Sign in!</b>
+      </Link>
+    </p>
+  </div>
+);
