@@ -13,14 +13,13 @@ const Privacy = () => (
 
       <h3>1. Introduction</h3>
       <p className="legal-paragraph">
-        1.1 J.B.Nina production is a company registered in Tallinn, Estonia. We are
-        committed to safeguarding the privacy of Circle visitors and service users, member
-        accounts data.
+        1.1 J.B.Nina production is a company registered in Tallinn, Estonia. We are committed to
+        safeguarding the privacy of Circle visitors and service users, member accounts data.
       </p>
       <p className="legal-paragraph">
         1.2 This policy applies where we are acting as a data controller with respect to the
-        personal data of Circle website visitors and service users, where we determine the
-        purposes and means of the processing of that personal data.
+        personal data of Circle website visitors and service users, where we determine the purposes
+        and means of the processing of that personal data.
       </p>
       <p className="legal-paragraph">
         1.3 We use cookies on our website. Where cookies are required for the provision of our
@@ -31,14 +30,14 @@ const Privacy = () => (
         See section 12 (About Cookies) below for more details.
       </p>
       <p className="legal-paragraph">
-        1.4 Circle incorporates privacy controls which affect how we will process your
-        personal data. By using the privacy controls, registered Circle users can specify what
-        information is visible to guest and to other registered Circle users. You can access
-        the privacy controls via: <Link to="/settings">https://circle.ckovalev.com/settings</Link>
+        1.4 Circle incorporates privacy controls which affect how we will process your personal
+        data. By using the privacy controls, registered Circle users can specify what information is
+        visible to guest and to other registered Circle users. You can access the privacy controls
+        via: <Link to="/settings">https://circle.ckovalev.com/settings</Link>
       </p>
       <p className="legal-paragraph">
-        1.5 In this policy, {'"'}we{'"'}, {'"'}us{'"'} and {'"'}our{'"'} refer to Circle run
-        by J.B. Nina production. For more information about us, see Section 18
+        1.5 In this policy, {'"'}we{'"'}, {'"'}us{'"'} and {'"'}our{'"'} refer to Circle run by J.B.
+        Nina production. For more information about us, see Section 18.
       </p>
 
       <h3>2. How we use your personal data</h3>
@@ -81,7 +80,8 @@ const Privacy = () => (
         {'"'}). The profile data may include your username, display name, email address, profile
         picture, description etc. The profile data may be processed for the purposes of enabling and
         monitoring your use of our website and services. The legal basis for this processing is our
-        legitimate interests, namely the proper administration of Circle and/or J.B. Nina production.
+        legitimate interests, namely the proper administration of Circle and/or J.B. Nina
+        production.
       </p>
       <p className="legal-paragraph">
         2.5 We may process information that you post for publication on our website or through our
@@ -89,10 +89,10 @@ const Privacy = () => (
         <b>publication data</b>
         {'"'}). The publication data may include posts, pictures, comments, audio and video files,
         post and comment {'"'}Likes{'"'}, any {'"'}Groups{'"'} data, any other content published by
-        the user on Circle. The publication data may be processed for the purposes of enabling
-        such publication and administering our website and services. The legal basis for this
-        processing is our legitimate interests, namely the proper administration of Circle and/or
-        J.B. Nina production.
+        the user on Circle. The publication data may be processed for the purposes of enabling such
+        publication and administering our website and services. The legal basis for this processing
+        is our legitimate interests, namely the proper administration of Circle and/or J.B. Nina
+        production.
       </p>
       <p className="legal-paragraph">
         2.6 We may process information that you provide to us for the purpose of subscribing to our
@@ -301,14 +301,14 @@ const Privacy = () => (
       </p>
       <p className="legal-paragraph">
         8.9 If you consider that our processing of your personal information infringes data
-        protection laws, you have a legal right to file a complaint with Circle Supervisory Board
-        or a relevant authority responsible for data protection. You may do so in Estonia, EU state
-        or a state of your habitual residence, your place of work or the place of the alleged
+        protection laws, you have a legal right to file a complaint with Circle Supervisory Board or
+        a relevant authority responsible for data protection. You may do so in Estonia, EU state or
+        a state of your habitual residence, your place of work or the place of the alleged
         infringement.
       </p>
       <p className="legal-paragraph">
-        8.10 J.B. Nina production is based in Estonia (European Union) and laws of other countries may
-        conflict with EU law and GDPR regulations that we aim to comply with. In cases where
+        8.10 J.B. Nina production is based in Estonia (European Union) and laws of other countries
+        may conflict with EU law and GDPR regulations that we aim to comply with. In cases where
         different regulations may be in conflict with each other, we will do our best to work with
         you to resolve your issues and/or concerns.
       </p>
@@ -412,13 +412,13 @@ const Privacy = () => (
 
       <h3>15. Our details</h3>
       <p className="legal-paragraph">
-        15.1 Circle is owned and operated by a company  J.B. Nina production, registered in
-        Tallinn, Estonia.
+        15.1 Circle is owned and operated by a company J.B. Nina production, registered in Tallinn,
+        Estonia.
       </p>
       <p className="legal-paragraph">
-        15.2 If you have any additional questions or concerns relating to privacy at Circle -
-        please contact us anytime at <a href="mailto:circle@ckovalev.com">circle@ckovalev.com</a>.
-        Thank you!
+        15.2 If you have any additional questions or concerns relating to privacy at Circle - please
+        contact us anytime at <a href="mailto:circle@ckovalev.com">circle@ckovalev.com</a>. Thank
+        you!
       </p>
 
       <p>
