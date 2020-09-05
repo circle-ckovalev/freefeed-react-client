@@ -19,19 +19,18 @@ function mapStateToProps(state) {
 const FREEFEED_INVITATION = {
   [INVITATION_LANGUAGE_OPTIONS.ENGLISH]: (
     <span>
-      FreeFeed is a small non-profit social network. It does not sell your data, nor does it show
-      ads to you. It is an <a href="https://github.com/FreeFeed">open-source project</a> which can
-      be used by anyone. FreeFeed is developed by a group of volunteers and paid for by donations
-      from users.
+      The Circle is a private social network for alumni of Andrei Kovalev&apos;s courses who share
+      an active commitment to photography and the visual arts. It follows many of the same social
+      media conventions we are all used to: each member has a profile, can interact with posts from
+      other users, and can subscribe to various groups per their interests.
     </span>
   ),
   [INVITATION_LANGUAGE_OPTIONS.RUSSIAN]: (
     <span>
-      FreeFeed - маленькая бесплатная социальная сеть, которая не продаёт ваши данные и не
-      показывает рекламу. Это проект с{' '}
-      <a href="https://github.com/FreeFeed">открытым исходным кодом</a>, которым может
-      воспользоваться любой желающий. Его развитием занимаются пользователи-волонтеры, на
-      пожертвования других пользователей.
+      The Circle is a private social network for alumni of Andrei Kovalev&apos;s courses who share
+      an active commitment to photography and the visual arts. It follows many of the same social
+      media conventions we are all used to: each member has a profile, can interact with posts from
+      other users, and can subscribe to various groups per their interests.
     </span>
   ),
 };
