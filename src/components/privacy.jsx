@@ -5,21 +5,21 @@ const Privacy = () => (
   <div className="box">
     <div className="box-header-timeline" />
     <div className="box-body">
-      <h3>FreeFeed Privacy Policy</h3>
+      <h3>Circle Privacy Policy</h3>
 
       <p>
-        Last updated: <b>July 21, 2018</b>
+        Last updated: <b>August 31, 2020</b>
       </p>
 
       <h3>1. Introduction</h3>
       <p className="legal-paragraph">
-        1.1 FreeFeed MTÜ is a not for profit Association registered in Tallinn, Estonia. We are
-        committed to safeguarding the privacy of FreeFeed.net visitors and service users, member
+        1.1 J.B.Nina production is a company registered in Tallinn, Estonia. We are
+        committed to safeguarding the privacy of Circle visitors and service users, member
         accounts data.
       </p>
       <p className="legal-paragraph">
         1.2 This policy applies where we are acting as a data controller with respect to the
-        personal data of FreeFeed.net website visitors and service users, where we determine the
+        personal data of Circle website visitors and service users, where we determine the
         purposes and means of the processing of that personal data.
       </p>
       <p className="legal-paragraph">
@@ -31,14 +31,14 @@ const Privacy = () => (
         See section 12 (About Cookies) below for more details.
       </p>
       <p className="legal-paragraph">
-        1.4 FreeFeed.net incorporates privacy controls which affect how we will process your
-        personal data. By using the privacy controls, registered FreeFeed.net users can specify what
-        information is visible to guest and to other registered FreeFeed.net users. You can access
-        the privacy controls via: <Link to="/settings">https://freefeed.net/settings</Link>
+        1.4 Circle incorporates privacy controls which affect how we will process your
+        personal data. By using the privacy controls, registered Circle users can specify what
+        information is visible to guest and to other registered Circle users. You can access
+        the privacy controls via: <Link to="/settings">https://circle.ckovalev.com/settings</Link>
       </p>
       <p className="legal-paragraph">
-        1.5 In this policy, {'"'}we{'"'}, {'"'}us{'"'} and {'"'}our{'"'} refer to FreeFeed.net run
-        by FreeFeed MTÜ. For more information about us, see Section 18
+        1.5 In this policy, {'"'}we{'"'}, {'"'}us{'"'} and {'"'}our{'"'} refer to Circle run
+        by J.B. Nina production. For more information about us, see Section 18
       </p>
 
       <h3>2. How we use your personal data</h3>
@@ -73,7 +73,7 @@ const Privacy = () => (
         processed for the purposes of operating our website, providing our services, ensuring the
         security of our website and services, maintaining back-ups of our databases and
         communicating with you. The legal basis for this processing is our legitimate interests,
-        namely the proper administration of FreeFeed.net and/or FreeFeed MTÜ.
+        namely the proper administration of Circle and/or J.B. Nina production.
       </p>
       <p className="legal-paragraph">
         2.4 We may process information you included in your personal profile on our website ({'"'}
@@ -81,7 +81,7 @@ const Privacy = () => (
         {'"'}). The profile data may include your username, display name, email address, profile
         picture, description etc. The profile data may be processed for the purposes of enabling and
         monitoring your use of our website and services. The legal basis for this processing is our
-        legitimate interests, namely the proper administration of FreeFeed.net and/or FreeFeed MTÜ.
+        legitimate interests, namely the proper administration of Circle and/or J.B. Nina production.
       </p>
       <p className="legal-paragraph">
         2.5 We may process information that you post for publication on our website or through our
@@ -89,10 +89,10 @@ const Privacy = () => (
         <b>publication data</b>
         {'"'}). The publication data may include posts, pictures, comments, audio and video files,
         post and comment {'"'}Likes{'"'}, any {'"'}Groups{'"'} data, any other content published by
-        the user on FreeFeed.net. The publication data may be processed for the purposes of enabling
+        the user on Circle. The publication data may be processed for the purposes of enabling
         such publication and administering our website and services. The legal basis for this
-        processing is our legitimate interests, namely the proper administration of FreeFeed.net
-        and/or FreeFeed MTÜ.
+        processing is our legitimate interests, namely the proper administration of Circle and/or
+        J.B. Nina production.
       </p>
       <p className="legal-paragraph">
         2.6 We may process information that you provide to us for the purpose of subscribing to our
@@ -111,7 +111,7 @@ const Privacy = () => (
         communications made using the website forms. The correspondence data may be processed for
         the purposes of communicating with you, improving the service, and record-keeping. The legal
         basis for this processing is our legitimate interests, namely the proper administration of
-        FreeFeed.net and/or FreeFeed MTÜ.
+        Circle and/or J.B. Nina production.
       </p>
       <p className="legal-paragraph">
         2.8 We may process any of your personal data identified in this policy where necessary for
@@ -124,7 +124,7 @@ const Privacy = () => (
         2.9 We may process any of your personal data identified in this policy where necessary for
         the purposes of obtaining or maintaining insurance coverage, managing risks, using volunteer
         work or obtaining professional advice. The legal basis for this processing is our legitimate
-        interests, namely the proper protection of FreeFeed MTÜ against risks.
+        interests, namely the proper protection of J.B. Nina production against risks.
       </p>
       <p className="legal-paragraph">
         2.10 In addition to the specific purposes for which we may process your personal data set
@@ -162,7 +162,7 @@ const Privacy = () => (
         data may be transferred to countries outside the European Economic Area (EEA).
       </p>
       <p className="legal-paragraph">
-        5.2 FreeFeed.net and FreeFeed MTÜ are located in Tallinn, Estonia (EU Member State).
+        5.2 Circle and J.B. Nina production are located in Tallinn, Estonia (EU Member State).
       </p>
       <p className="legal-paragraph">
         5.3 The hosting facilities for our website are situated in Germany and in the United States
@@ -199,8 +199,8 @@ const Privacy = () => (
       <p className="legal-paragraph">
         6.4 In some cases it is not possible for us to specify in advance the periods for which your
         personal data will be retained. In such cases, we will determine the period of retention
-        based on our legitimate interests, namely the proper protection of FreeFeed MTÜ against
-        risks and communications with users.
+        based on our legitimate interests, namely the proper protection of J.B. Nina production
+        against risks and communications with users.
       </p>
       <p className="legal-paragraph">
         6.5 Notwithstanding the other provisions of this Section 6, we may retain your personal data
@@ -211,7 +211,7 @@ const Privacy = () => (
 
       <h3>7. Amendments</h3>
       <p className="legal-paragraph">
-        7.1 We may update this policy from time to time by publishing a new version on FreeFeed.net
+        7.1 We may update this policy from time to time by publishing a new version on Circle.
       </p>
       <p className="legal-paragraph">
         7.2 You should check this page occasionally to ensure you are happy with any changes to this
@@ -301,13 +301,13 @@ const Privacy = () => (
       </p>
       <p className="legal-paragraph">
         8.9 If you consider that our processing of your personal information infringes data
-        protection laws, you have a legal right to file a complaint with FreeFeed Supervisory Board
+        protection laws, you have a legal right to file a complaint with Circle Supervisory Board
         or a relevant authority responsible for data protection. You may do so in Estonia, EU state
         or a state of your habitual residence, your place of work or the place of the alleged
         infringement.
       </p>
       <p className="legal-paragraph">
-        8.10 FreeFeed MTÜ is based in Estonia (European Union) and laws of other countries may
+        8.10 J.B. Nina production is based in Estonia (European Union) and laws of other countries may
         conflict with EU law and GDPR regulations that we aim to comply with. In cases where
         different regulations may be in conflict with each other, we will do our best to work with
         you to resolve your issues and/or concerns.
@@ -319,12 +319,12 @@ const Privacy = () => (
       </p>
       <p className="legal-paragraph">
         8.12 You may exercise any of your rights in relation to your personal data email notice to
-        us <a href="mailto:freefeed.net@gmail.com">freefeed.net@gmail.com</a>
+        us <a href="mailto:circle@ckovalev.com">circle@ckovalev.com</a>
       </p>
 
       <h3>9. Third party websites</h3>
       <p className="legal-paragraph">
-        9.1 FreeFeed.net includes hyperlinks to, and details of, third party websites.
+        9.1 Circle includes hyperlinks to, and details of, third party websites.
       </p>
       <p className="legal-paragraph">
         9.2 We have no control over, and are not responsible for, the privacy policies and practices
@@ -412,30 +412,18 @@ const Privacy = () => (
 
       <h3>15. Our details</h3>
       <p className="legal-paragraph">
-        15.1 FreeFeed.net is owned and operated by a non-profit organisation FreeFeed MTÜ,
-        registered in Tallinn, Estonia.
+        15.1 Circle is owned and operated by a company  J.B. Nina production, registered in
+        Tallinn, Estonia.
       </p>
       <p className="legal-paragraph">
-        15.2 You can contact us:
-        <br />
-        (a) by email: <a href="mailto:freefeed.net@gmail.com">freefeed.net@gmail.com</a>
-        <br />
-        (b) by post:
-        <br />
-        FreeFeed MTÜ
-        <br />
-        Muti 30-25
-        <br />
-        13424 Tallinn, Estonia
-      </p>
-      <p className="legal-paragraph">
-        15.3 If you have any additional questions or concerns relating to privacy at FreeFeed.net -
-        please contact us anytime using the email address above. Thank you!
+        15.2 If you have any additional questions or concerns relating to privacy at Circle -
+        please contact us anytime at <a href="mailto:circle@ckovalev.com">circle@ckovalev.com</a>.
+        Thank you!
       </p>
 
       <p>
         If you have any questions about these Terms, please{' '}
-        <a href="mailto:freefeed.net@gmail.com">contact us</a>.
+        <a href="mailto:circle@ckovalev.com">contact us</a>.
       </p>
     </div>
   </div>
