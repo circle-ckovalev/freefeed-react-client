@@ -14,11 +14,6 @@ export default {
   auth: {
     tokenPrefix: 'freefeed_',
     userStorageKey: 'USER_KEY',
-    /**
-     * Array of enabled identity providers (e.g. ['facebook', 'google'])
-     * or empty array if no providers are supported.
-     */
-    extAuthProviders: ['facebook', 'google'],
   },
 
   captcha: {
@@ -77,6 +72,10 @@ export default {
 
   registrationsLimit: {
     emailFormIframeSrc: null,
+  },
+
+  analytics: {
+    google: null,
   },
 
   eslint: {
